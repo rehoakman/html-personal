@@ -1,0 +1,28 @@
+html{
+    font-size: 22px
+}
+
+body {
+    background-color:dimgray;
+    color: #eee;
+}
+
+/* header indent rule*/
+.ind{
+    margin-left: 30px;
+}
+
+/* the %'s in background-position correlate to vertical and horizontal respectivly. Or left,center
+    background-size specifies size of background iamge*/
+.headerImg{
+    background-image:url("./img/mplsSkyline.jpg");
+    background-size:cover;
+    /*background-color: blue;*/
+    background-position: 50% 30%;
+    height: 50vh;
+}
+
+/*an ID, applies properties only to whatever is named after the # */
+/*#Resume{
+    margin-top: 500px;
+}*/
