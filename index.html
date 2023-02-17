@@ -1,104 +1,122 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="Ryan">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ryan Her's Page</title>
+        <title>CSS cheat sheet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 style="text-align: center">Welcome to my website!</h1>
-        <div class="headerImg">
-           <!--the div is calling the css class, do this instead of putting just the image in html
-            because you need the css properties associated with the image--> 
-        
+       
+    
+        <div class="box-1">
+            <h1> Welcome to my website!</h1>
+                <p>A place to showcase my skills, knowledge and myself
+    
+                </p>
         </div>
-        
-        <hr>
-        <section id="aboutme">
-            <article>
-                <h2 class="ind">About Me</h2>
-                <p>
-                Hello! My name is Ryan Her and I am currently studying Computer Science at Metropolitan State University
-                in St.Paul, Minnesota with aspirations of becoming a Software Developer!
-                </p>
-                <p>
-                Some of my hobbies include:   
-                </p>
-                <!--https://www.w3schools.com/html/html5_semantic_elements.asp-->
-                <ol>
-                    <li>Going to the gym</li>
-                    <li>Watching Football</li>
-                    <li>Fishkeeping</li>
-                    <li>Reading about True Crime</li>
-                </ol>
-            </article>
-        </section>
-        <hr>
-        <section id="Resume">
-            <h3 class="ind">Resume</h3>
-                <p>Here is where an image of my resume will go</p>
-                <img src="img/RyanHerresume1024_1.jpg" alt="resume" width="791" height="1024">
-        
+        <section id="bio">     
+            <img src="images/ranger2.jpg" class="pfp">
+                <p>my name is ryan</p>
+
+
+
             
-            <script src="" async defer></script>
-
-
         </section>
-        <hr>
-        <section id="Contact">
-            <h4 class="ind">Contact and Connect with me!</h4>
-            <!--Put links for email and link to linkedin account here
-                Refer to tutorial for linking to external websites and email
-                LINK GITHUB-->
-                <p>
-                    <a href = "mailto: ryanher2289@gmail.com">Email</a>
-                </p>
-               <p> 
-                    <a href = "https://www.linkedin.com/in/ryan-her-737932248/">LinkedIn</a>
-               </p>
+<div class="container">
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Resume</a></li>
+            </ul>
 
-        </section>
-        <hr>
-        <section id="Projects">
-            <!--Here provide links to github projects and talk about the projects-->
-            <h4 class="ind">Projects</h4>
-            <!--Maybe put things in an ordered list and list elements, talking briefly
-                about each project-->
-                <ul>
-                    <p>1. To-Do List</p>
-                    <li>Made using Python, simple To-Do List</li>
-                    <p>2. Tic-Tac-Toe</p>
-                    <li>Made in Java, Tic-Tac-Toe game made using double Arrays</li>
+        </div>
+    </nav>
+    <div class="box-2">
+        <h1> About me</h1>
+            <p>Hello! My name is Ryan Her and I am currently studying Computer Science at Metropolitan State University
+                in St.Paul, Minnesota with aspirations of becoming a Software Developer! 
+                I enjoy going to the gym, watching Football (Skol Vikes!), and
+                reading about true crime and detective work.
+            </p>
+    </div>
 
-                    
-                </ul>
-                
+    <div class="Resume">
+        <h2>Resume</h2>
+            <img src="images/RyanHerresume.jpg" alt="resume" width="1000" height="1404">
+    </div>
+   
 
+    <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eaque eum, laboriosam vero optio atque
+            commodi velit de
+            </p>
+
+    </div>
+    <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eaque eum, laboriosam vero optio atque
+            commodi velit de
+            </p>
+
+    </div>
+    <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eaque eum, laboriosam vero optio atque
+            commodi velit de
+            </p>
+
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="p-box"> 
+        <h1>Hello</h1>
+        <h2>goodbye</h2>
+    </div>
+   
+    <ul class="my-list">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+
+
+    <div id="main-block">
+        <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eaque eum, laboriosam vero optio atque
+            commodi velit de
+            </p>
+
+    </div>
+
+    <div id="sidebar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eaque eum, laboriosam vero optio atque
+            commodi velit de
+            </p>
+
+    </div>
+
+
+</div><!-- ./container ends here-->
         
-        </section>
-
-
-
-        <hr>
-
-           <p style="text-align: center;">
-                &copy; 2023 Ryan Her- All Rights Reserved
-           </p> 
-
-
-
-
-
+        <script src="" async defer></script>
+    <div style="margin-top:500px;"></div>
     </body>
 </html>
-
-<!-- LOOK AT WHAT SEMANTICS YOU MIGHT NEED, BE SURE TO PUT THEM IN-->
-<!-- IDEAS:
-        After the 'about me' section, maybe post resume/github (remember how
-        to link to other websites)-->
-       
-        <!-- make a nav bar for website-->

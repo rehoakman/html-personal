@@ -5,11 +5,37 @@ html{
 body {
     background-color:dimgray;
     color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }
+
+
+.container{
+    margin-right: auto;
+    width: 80%;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color:white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
 
 /* header indent rule*/
 .ind{
     margin-left: 30px;
+}
+
+/* testing and playing around with changing specific parts*/
+h1{
+    background-color: whitesmoke;
+    color: black;
 }
 
 /* the %'s in background-position correlate to vertical and horizontal respectivly. Or left,center
@@ -22,7 +48,18 @@ body {
     height: 50vh;
 }
 
+
 /*an ID, applies properties only to whatever is named after the # */
+
 /*#Resume{
     margin-top: 500px;
 }*/
+
+#Resume {
+    text-align: center;
+    
+}
+
+.cen{
+    text-align: center;
+}

@@ -1,0 +1,276 @@
+
+/* changes attributes of anything in body html tag*/
+
+/* having 3 different fonts b/c if one cant load, then it goes to the 
+next one, etc*/
+
+/* the * class below means it will apply to every element, called a reset*/
+/* *{
+    margin:0;
+    padding:0;
+}*/
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, 
+    sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /*same as above*/
+    font: normal 16px Arial, Helvetica,
+        sans-serif;
+        /* shortcut for doing font in one line: font: *weight* *size px* *family*
+font: normal 16px Arial, Helvetica, sans-serif; */
+
+    /* changes space between the lines, em is the unit*/
+    line-height: 1.6em;
+    margin: 0;
+}
+
+
+
+.facepic{
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+.container{
+    /* use % for things like container, so that it scales properly to changing 
+    size of screen*/
+   width: 60%;
+    /*sets auto margin to all sides of anything wrapped
+    in this class*/
+    margin-right: 0;
+    padding-left: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.clr{
+    clear:both;
+}
+
+.button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.box-1{
+    text-align: center;
+    background-color: #333;
+    color:white;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /*can change width of borders, and even change specific 
+    border widths and styles*/
+    border-width: 3px;
+    
+    /* adds 20px of padding to all 4 sides since its all 20px and unspecified*/
+    padding: 20px;
+
+    margin-top: 20px;
+    margin:20px 0;
+}
+
+/* a affects any link in the page and links have different states*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color:blue;
+}
+
+/* specifically targets any h1 element in the class .box-1 */
+/*examples of text formatting styles*/
+.box-1 h1{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    text-align: center;
+    border: 3px dotted #ccc;
+    padding:20px;
+    margin:20px 0;
+
+}
+
+.Resume{
+    text-align: center;
+    border:1px #ccc solid;
+    padding: 10px;
+    /*gives the box curved edges*/
+    border-radius: 15px;
+    display:block;
+   
+}
+
+.Resume h2{
+    text-align: center;
+}
+
+
+
+.my-form{
+    padding:20px;
+
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+
+/* puts labels one line above input field*/
+.my-form label{
+    display:block;
+}
+
+/* type="text" specifies to change elements only with input type text*/
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width: 100%;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    border:1px solid #ccc;
+    padding: 10px;
+    /* box-sizing takes the padding and border px and applies it into width, NOT
+    adding to it (that makes it too big)*/
+    box-sizing: border-box;
+}
+
+/* use # with selector b/c the html element is an ID, NOT a class*/
+
+#bio{
+    height: 600px;
+    width: 720px;
+    float: right;
+    background-color: darkblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+/* specifics for the profile pic */
+.pfp{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border:1px solid #000;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+/* remember the different positions and what they mean*/
+.p-box h1{
+    
+    top:40px;
+}
+
+
+/* making pseudo-classes. or, classes for one particular element in a list
+that each will have their own properties*/
+.my-list li:first-child{
+    background-color: red;
+}
+
+/*only affects the last list item*/
+.my-list li:last-child{
+    background: blue;
+}
+
+
+/* will affect whatever list item in the paren*/
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+/* can also do even or odd list elements in the paren*/
+.my-list li:nth-child(even){
+    background-color: green;
+}
+
+
+
+#navbar{
+    background-color: darkgrey;
+    color:white
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+/*only changes the list item properties, NOT the links*/
+#navbar li{
+    display: inline;
+}
+
+/* changes the properties of the actual links/text*/
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
